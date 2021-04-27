@@ -5,9 +5,11 @@ function Header() {
   return (
     <div className="Header">
       <h1>Task Tracker</h1>
-      <Button text="Add" />
+      <Button style={style} text="Add" />
     </div>
   );
 }
-
+var style = {
+  marginTop: "3em",
+};
 export default Header;
