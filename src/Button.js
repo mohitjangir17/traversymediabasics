@@ -1,10 +1,9 @@
+import "./App.css";
 
-import './App.css';
-
-function Button() {
+function Button({ text, onClick }) {
   return (
     <div className="Button">
-      <button>Add</button>
+      <button onClick={onClick}>{text}</button>
     </div>
   );
 }
