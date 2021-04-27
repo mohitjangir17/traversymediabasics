@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Header from "./Header";
+import Tasks from "./Tasks";
 
 function App() {
+  var [tasks, setTasks] = useState([
+    {
+      id: "0",
+      task: "Appointment at college",
+      time: "12pm",
+    },
+    {
+      id: "1",
+      task: "gedi route",
+      time: "6pm",
+    },
+    {
+      id: "2",
+      task: "Dinner",
+      time: "9pm",
+    },
+  ]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Tasks tasks={tasks} />
     </div>
   );
 }
