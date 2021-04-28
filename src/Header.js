@@ -14,6 +14,12 @@ const Header = ({ onAdd, showAdd }) => {
   );
 };
 var style = {
-  marginTop: "3em",
+  marginTop: "2em",
+  padding: ".5em 1em",
+  backgroundColor: "green",
+  border: "none",
+  color: "white",
+  borderRadius: "4px",
+  cursor: "pointer",
 };
 export default Header;

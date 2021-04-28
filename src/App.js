@@ -8,27 +8,28 @@ function App() {
   var [tasks, setTasks] = useState([
     {
       id: "0",
-      task: "Appointment at college",
+      task: "Static Data",
       time: "12pm",
       reminder: true,
     },
-    {
-      id: "1",
-      task: "gedi route",
-      time: "6pm",
-      reminder: true,
-    },
-    {
-      id: "2",
-      task: "Dinner",
-      time: "9pm",
-      reminder: true,
-    },
+    // {
+    //   id: "1",
+    //   task: "gedi route",
+    //   time: "6pm",
+    //   reminder: true,
+    // },
+    // {
+    //   id: "2",
+    //   task: "Dinner",
+    //   time: "9pm",
+    //   reminder: true,
+    // },
   ]);
 
   const addTask = (task) => {
     const id = Math.floor(Math.random() * 10000000) + 1;
     const newTask = { id, ...task };
+    console.log(newTask);
     setTasks([...tasks, newTask]);
   };
 
@@ -46,7 +47,7 @@ function App() {
     );
   };
 
-  const [showAddTask, setShowAddTask] = useState(false);
+  const [showAddTask, setShowAddTask] = useState(true);
 
   return (
     <div className="App">

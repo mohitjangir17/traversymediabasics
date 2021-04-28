@@ -20,6 +20,12 @@ function Task({ task, onDelete, onDoubleClick }) {
   );
 }
 var style = {
-  marginTop: "4em",
+  margin: "4em",
+  padding: ".5em 1em",
+  backgroundColor: "red",
+  border: "none",
+  color: "white",
+  borderRadius: "4px",
+  cursor: "pointer",
 };
 export default Task;
