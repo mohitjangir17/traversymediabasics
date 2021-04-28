@@ -1,9 +1,12 @@
 import "./App.css";
 import Button from "./Button";
 
-function Task({ task, onDelete }) {
+function Task({ task, onDelete, onDoubleClick }) {
   return (
-    <div className="Task">
+    <div
+      className={`Task ${task.reminder ? "reminder" : ""}`}
+      onDoubleClick={() => onDoubleClick(task.id)}
+    >
       <ul>
         <li>
           <h2>{task.task}</h2>
@@ -11,7 +14,7 @@ function Task({ task, onDelete }) {
         </li>
       </ul>
       <div>
-        <Button style={style} onClick={onDelete} text="Delete" />
+        <Button style={style} onClick={() => onDelete(task.id)} text="Delete" />
       </div>
     </div>
   );

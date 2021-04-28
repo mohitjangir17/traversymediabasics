@@ -1,11 +1,16 @@
 import "./App.css";
 import Task from "./Task";
 
-function Tasks({ tasks, onDelete }) {
+function Tasks({ tasks, onDelete, onDoubleClick }) {
   return (
     <div className="Tasks">
       {tasks.map((task) => (
-        <Task task={task} onDelete={onDelete} />
+        <Task
+          key={task.id}
+          task={task}
+          onDoubleClick={onDoubleClick}
+          onDelete={onDelete}
+        />
       ))}
     </div>
   );

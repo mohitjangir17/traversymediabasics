@@ -13,6 +13,15 @@
   justify-content: space-around;
 }
 
+.reminder {
+  border-left: 3px solid rgb(255, 0, 0);
+}
+
+.Task-form {
+  text-align: left;
+  margin: 1em;
+}
+
 .Tasks {
   border: 1px solid black;
   margin: 0 4em;
@@ -21,5 +30,6 @@
   text-align: left;
   display: flex;
   justify-content: space-between;
-  margin: 0 2em;
+  margin: 0.2em 0em;
+  cursor: pointer;
 }
