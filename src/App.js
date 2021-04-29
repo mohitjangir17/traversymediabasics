@@ -12,18 +12,6 @@ function App() {
       time: "12pm",
       reminder: true,
     },
-    // {
-    //   id: "1",
-    //   task: "gedi route",
-    //   time: "6pm",
-    //   reminder: true,
-    // },
-    // {
-    //   id: "2",
-    //   task: "Dinner",
-    //   time: "9pm",
-    //   reminder: true,
-    // },
   ]);
 
   const addTask = (task) => {
