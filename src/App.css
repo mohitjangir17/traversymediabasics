@@ -1,3 +1,8 @@
+body {
+  padding: 0;
+margin: 0;
+box-sizing: 0;
+}
 .App {
   text-align: center;
   scroll-behavior: smooth;
@@ -6,7 +11,7 @@
 .Header {
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px black solid;
+  border-bottom: 2px black solid;
   background-color: rgb(50, 177, 50);
 }
 
@@ -16,8 +21,32 @@
 
 .Task-form {
   margin: 1em;
+  
+}
+form {
+  animation: slidedown 1s both 0s;
+  transition: ease-in-out;
 }
 
+@keyframes slidedown {
+  0% {
+    transform: translateY(-50%);
+    opacity:0
+  }  
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity:1
+  }  
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+}
 .form {
   margin: 0 40%;
   text-align: left;
@@ -37,13 +66,20 @@
 .Tasks {
   border: 2px solid black;
   margin: 0.5em 4em;
+  animation: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.Task> ul >li{
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.Task> ul >li > div {
+  text-align: left;
 }
 .Task {
   text-align: left;
-  display: flex;
-  justify-content: space-between;
   margin: 0.5em 4em;
   cursor: pointer;
   border-radius: 4px;
-  background-color: grey;
+  background-color: rgb(230, 230, 230);
 }

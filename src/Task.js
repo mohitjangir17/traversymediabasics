@@ -9,18 +9,18 @@ function Task({ task, onDelete, onDoubleClick }) {
     >
       <ul>
         <li>
-          <h2>{task.task}</h2>
-          <h2>{task.time}</h2>
+          <div><h2>{task.task}</h2></div>
+          <div><h2>{task.time}</h2></div>
+          <div><Button style={style} onClick={() => onDelete(task.id)} text="Delete" /></div>
         </li>
       </ul>
-      <div>
-        <Button style={style} onClick={() => onDelete(task.id)} text="Delete" />
-      </div>
+        
+      
     </div>
   );
 }
 var style = {
-  margin: "4em",
+  margin: "1em",
   padding: ".5em 1em",
   backgroundColor: "red",
   border: "none",

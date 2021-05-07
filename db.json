@@ -1,16 +1,10 @@
 {
   "tasks": [
     {
-      "id": "2",
-      "task": "Dinner",
-      "time": "9pm",
-      "reminder": true
-    },
-    {
-      "task": "Gedi Route",
-      "time": "2pm",
+      "task": "My First task",
+      "time": "1:30pm",
       "reminder": false,
-      "id": "BciSXYh"
+      "id": 1
     }
   ]
 }
